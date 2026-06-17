@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sylecont.css">
+</head>
+<body>
+    <section class="subheader">
+        <nav>
+            <a href="index.html"><img src="imagenes/logo-white.png" alt=""></a>
+            <div class="navl">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="actividades.html">Actividades</a></li>
+                    <li><a href="tours.html">Tours</a></li>
+                    <li><a href="informacion.html">Informacion</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>    
+        </nav>
+        <h1>Solicita tu visita</h1>
+        </section>
+    <section class="sssa"></section>
+    <div class="dosp"></div>        
+        <div class="form-container">
+        <h2>¿Listo para tu próxima aventura? ✈️</h2>
+        <form action="#" method="POST" id="agencia-viajes-form">
+            
+            <!-- Datos Personales -->
+            <div class="form-group">
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Tu Nombre">
+            </div>
+
+            <div class="inline-group">
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono / WhatsApp:</label>
+                    <input type="tel" id="telefono" name="telefono" required placeholder="+591 70000000">
+                </div>
+            </div>
+
+            <!-- Detalles del Viaje -->
+            <div class="form-group">
+                <label for="destino">¿Cuál es tu destino soñado o buscas recomendaciones?</label>
+                <input type="text" id="destino" name="destino" list="destinos" required placeholder="Ej. Uyuni, Europa, Machu Picchu">
+                <datalist id="destinos">
+                    <option value="Salar de Uyuni"></option>
+                    <option value="La Paz (Lago Titicaca / Camino de la Muerte)"></option>
+                    <option value="Europa (Múltiples países)"></option>
+                    <option value="Caribe (Todo incluido)"></option>
+                </datalist>
+            </div>
+
+            <div class="inline-group">
+                <div class="form-group">
+                    <label for="fecha_ida">Fecha de Inicio:</label>
+                    <input type="date" id="fecha_ida" name="fecha_ida" required>
+                </div>
+                <div class="form-group">
+                    <label for="duracion">Duración (Días):</label>
+                    <input type="number" id="duracion" name="duracion" min="1" placeholder="Ej. 7" style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 6px;" required>
+                </div>
+            </div>
+
+            <div class="inline-group">
+                <div class="form-group">
+                    <label for="pasajeros">Número de Pasajeros:</label>
+                    <input type="number" id="pasajeros" name="pasajeros" min="1" value="1" style="width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 6px;" required>
+                </div>
+                <div class="form-group">
+                    <label for="estilo">Estilo de Viaje:</label>
+                    <select id="estilo" name="estilo" required>
+                        <option value="" disabled selected>Selecciona una opción</option>
+                        <option value="aventura">Aventura y Naturaleza</option>
+                        <option value="relax">Relax / Playa</option>
+                        <option value="cultural">Cultural e Histórico</option>
+                        <option value="luna-miel">Luna de Miel</option>
+                        <option value="todo-incluido">Todo Incluido</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="presupuesto">Presupuesto estimado (por persona):</label>
+                <select id="presupuesto" name="presupuesto" required>
+                    <option value="" disabled selected>Selecciona un rango</option>
+                    <option value="bajo">Económico (Menos de $300)</option>
+                    <option value="medio">Medio ($300 - $1000)</option>
+                    <option value="alto">Alto ($1000 - $3000)</option>
+                    <option value="lujo">Lujo (Más de $3000)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="comentarios">¿Algún requerimiento especial, alergias o comentarios adicionales?</label>
+                <textarea id="comentarios" name="comentarios" rows="4" placeholder="Ej. Viajo con niños pequeños, necesito habitación accesible..."></textarea>
+            </div>
+
+            <button type="submit">Solicitar Cotización 🚀</button>
+        </form>
+    </div>
+    <div class="contenedor-imagenes">
+        <img src="imagenes/photo1jpg.jpg" alt="Imagen 1 pasable">
+        <img src="imagenes/turismo-fotografico-bolivia-magri-tour-operator-8.webp" alt="Imagen 2 pasable">
+        <img src="imagenes/eduardo-avaroa.jpg" alt="Imagen 3 pasable">
+    </div>
+</div>            
+</section>         
+            
+    <section class="foter">
+        <p>Calle Capitán Ravelo No. 2101-(591-2) 2442727-Calle 20 de Calacoto # 1383, entre Av. Ballivián y Julio Patiño</p>
+        <p>2026 Mi Sitio Web. Todos los derechos reservados.</p>
+    </section>
+        
+    
+</body>
+</html>
